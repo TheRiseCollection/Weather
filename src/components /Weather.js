@@ -1,6 +1,6 @@
 import React from "react"
 
-class Titles extends React.Component {
+class Weather extends React.Component {
   state = this.props.initialState || {}
 
   render() {
@@ -10,4 +10,4 @@ class Titles extends React.Component {
   }
 }
 
-export default Titles
+export default Weather
