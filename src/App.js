@@ -7,6 +7,7 @@ function App() {
   return (
   <div>
     <h1>Weather</h1>
+    <p>Search for weather conditions</p>
     <Form></Form>
   </div>
   );
