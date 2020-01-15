@@ -14,7 +14,7 @@ class App extends React.Component {
     country: undefined,
     humidity: undefined,
     description: undefined,
-    error: undefine
+    error: undefined
   }
 
   //getWeather is a method we'll use to make the api call
