@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Form from './components /FormComponent'
+import FormPage from './components /FormComponent'
 import Weather from './components /WeatherComponent'
 
 const Api_Key = "072d16aa989b726d20052b1cf6786f43";
@@ -47,7 +47,7 @@ class App extends React.Component {
         <div className="App-header">
         <h1>Weather</h1>
           <p>Search for weather conditions</p>
-          <Form loadWeather={this.getWeather} />
+          <FormPage loadWeather={this.getWeather} />
                   <Weather
                     temperature={this.state.temperature}
                     city={this.state.city}
