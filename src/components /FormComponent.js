@@ -2,7 +2,6 @@ import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBCard, MDBCardBody, MDBIcon } from 'mdbreact';
 
 class FormPage extends React.Component {
-
   state = this.props.initialState || {}
 render() {
   return (
