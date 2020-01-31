@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import FormPage from './components /FormComponent'
+import Form from './components /FormComponent'
 import Weather from './components /WeatherComponent'
 
 const Api_Key = "072d16aa989b726d20052b1cf6786f43";
@@ -43,19 +43,33 @@ class App extends React.Component {
 
   render() {
     return (
-        <div className="App-header">
-        <h1>Weather</h1>
-          <p>Search for weather conditions</p>
-          <FormPage loadWeather={this.getWeather} />
-                  <Weather
-                    temperature={this.state.temperature}
-                    city={this.state.city}
-                    country={this.state.country}
-                    humidity={this.state.humidity}
-                    description={this.state.description}
-                    error={this.state.error}
-                  />
-        </div>
+      <div>
+        
+      <div className="wrapper">
+
+       <div >
+         <div>
+           <div className="row">
+             <div >
+             </div>
+             <div className="col-xs-7 form-container">
+             <Form loadWeather={this.getWeather} />
+               <Weather
+                 temperature={this.state.temperature}
+                 city={this.state.city}
+                 country={this.state.country}
+                 humidity={this.state.humidity}
+                 description={this.state.description}
+                 error={this.state.error}
+               />
+             </div>
+           </div>
+           <p className="header-text">THE RISE COLLECTION</p>
+
+         </div>
+       </div>
+     </div>
+   </div>     
     )
   }
 }
