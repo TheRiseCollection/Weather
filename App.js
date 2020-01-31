@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Form from './components /FormComponent'
-import Weather from './components /WeatherComponent'
+import FormPage from './components/FormComponent';
+import Weather from './components/WeatherComponent';
 
 const Api_Key = "072d16aa989b726d20052b1cf6786f43";
 
@@ -17,6 +17,7 @@ class App extends React.Component {
     error: undefined
   }
 
+  //getWeather is a method we'll use to make the api call
   getWeather = async (e) => {
 
     const city = e.target.elements.city.value;
@@ -43,33 +44,37 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        
-      <div className="wrapper">
+<div className="App-header">
+<div class="bird-container bird-container--one">
+		<div class="bird bird--one"></div>
+	</div>
+	
+	<div class="bird-container bird-container--two">
+		<div class="bird bird--two"></div>
+	</div>
+	
+	<div class="bird-container bird-container--three">
+		<div class="bird bird--three"></div>
+	</div>
+	
+	<div class="bird-container bird-container--four">
+		<div class="bird bird--four"></div>
+	</div>
+  
+<h1>Weather</h1>
+  <p>Search for Weather Conditions</p>
+  <FormPage loadWeather={this.getWeather} />
+          <Weather
+            temperature={this.state.temperature}
+            city={this.state.city}
+            country={this.state.country}
+            humidity={this.state.humidity}
+            description={this.state.description}
+            error={this.state.error}
+          />
+</div>
 
-       <div >
-         <div>
-           <div className="row">
-             <div >
-             </div>
-             <div className="col-xs-7 form-container">
-             <Form loadWeather={this.getWeather} />
-               <Weather
-                 temperature={this.state.temperature}
-                 city={this.state.city}
-                 country={this.state.country}
-                 humidity={this.state.humidity}
-                 description={this.state.description}
-                 error={this.state.error}
-               />
-             </div>
-           </div>
-           <p className="header-text">THE RISE COLLECTION</p>
 
-         </div>
-       </div>
-     </div>
-   </div>     
     )
   }
 }
