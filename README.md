@@ -1,4 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Weather
+
+## THE RISE COLLECTION
+![GitHub Logo](https://gyazo.com/333ddb788fa4f1f7792212debf3d8f07.png)
+
+
+## About
+
+Weather was created to pull in local weather data via the openweathermap api.
 
 ## Available Scripts
 
