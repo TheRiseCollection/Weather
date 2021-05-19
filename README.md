@@ -1,7 +1,7 @@
 
 ## About
 
-Weather was created to pull in local weather data via the openweathermap api.
+reactjs-weather-web was created while interacting with the openweathermap api. It was a good starter project to practice API call's and displaying returned data! 
 
 ## Available Scripts
 
